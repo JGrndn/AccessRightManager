@@ -1,5 +1,6 @@
 # Description
-This layout allows you to manage the access rights at the property level in your Evolve website.
+This layout allows you to manage the access rights at the property level in your Evolve website.  
+Note : Still in beta  
 
 # Installation  
 [https://github.com/casewise/cpm/wiki](https://github.com/casewise/cpm/wiki)  
