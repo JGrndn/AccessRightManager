@@ -24,6 +24,13 @@
     }
 
     cwApi.cwPropertiesLayouts.CwPropertiesLayout.prototype.canDisplayProperty = function (objectTypeScriptName, propertyScriptName){
+        if(this.propertyGroup.view === undefined) {
+            var view = cwAPI.getCurrentView();
+            if(view !== undefined) {
+               view = view.cwView;
+               this.propertyGroup.view = view; 
+            }
+        }
         return isReadAllowed(this.propertyGroup.view, objectTypeScriptName, propertyScriptName);
     };
 
